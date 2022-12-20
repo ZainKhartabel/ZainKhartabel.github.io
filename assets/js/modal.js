@@ -22,6 +22,13 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+  if (event.target == modal3) {
+    modal3.style.display = "none";
+	$('#zsearch').get(0).pause();
+  }
 } 
 ///////////////////////////////////////////////////////
 // Get the modal
@@ -43,12 +50,6 @@ span2.onclick = function() {
   modal2.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal2) {
-    modal2.style.display = "none";
-  }
-} 
 ////////////////////////////////////////////////////////////////
 // Get the modal
 var modal3 = document.getElementById("myModal3");
@@ -71,13 +72,6 @@ span3.onclick = function() {
   $('#zsearch').get(0).pause();
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal3) {
-    modal3.style.display = "none";
-	$('#zsearch').get(0).pause();
-  }
-} 
 
 let slideIndex = 1;
 showSlides(slideIndex);
